@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    label, div, h3{
+        color: rgb(160, 130, 114);
+    }
+</style>
+
+<body>
+    <h3>This is HTML forms</h3>
+    <form action="backend.php">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="nyBonus">
+        </div>
+        <br>
+        <div>
+            Are you Eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female: <input type="radio" name="myGender">Other: <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about Yourself: <br> <textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="nationality">Nationality</label>
+            <select name="myNationality" id="nationality">
+                <option value="ind" selected>Indian</option>
+                <option value="usa">American</option>
+                <option value="jpn">Japanese</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
