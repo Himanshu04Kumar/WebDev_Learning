@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            /* border: 2px solid red; */
+            border-radius: 23px;
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 8px 8px rgb(121, 102, 78); */
+            /* box-shadow: -8px -8px rgb(121, 102, 78); */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 8px 8px 8px rgb(121, 102, 78);
+            /* box-shadow: -8px -8px 8px rgb(121, 102, 78); */
+            
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 8px 8px 8px 8px rgba(121, 102, 78, 0.5); */
+            /* box-shadow: -8px -8px 8px 8px rgba(121, 102, 78, 0.5); */
+
+            /* box-shadow: inset 8px 8px rgb(121, 102, 78); */
+            /* box-shadow: inset -8px -8px rgb(121, 102, 78); */
+        }
+        h1{
+            text-shadow: 2px 1px white;
+            text-shadow: 2px 1px 5px white;
+            text-shadow: -2px -1px 5px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is C++ course</h1>
+            <p>I have started C++ course which doesn't mean we will stop this course. We will continue this course till completion. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque saepe illo, dolor quod ipsa officiis dolores veniam eveniet ex deleniti delectus molestiae libero fugit doloremque ipsum fugiat odit velit sequi excepturi ad. Distinctio, a!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>This is Java course</h1>
+            <p>I have started Java course which doesn't mean we will stop this course. We will continue this course till completion. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque saepe illo, dolor quod ipsa officiis dolores veniam eveniet ex deleniti delectus molestiae libero fugit doloremque ipsum fugiat odit velit sequi excepturi ad. Distinctio, a!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>This is Python course</h1>
+            <p>I have started python course which doesn't mean we will stop this course. We will continue this course till completion. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque saepe illo, dolor quod ipsa officiis dolores veniam eveniet ex deleniti delectus molestiae libero fugit doloremque ipsum fugiat odit velit sequi excepturi ad. Distinctio, a!</p>
+        </div>
+    </div>
+</body>
+</html>
